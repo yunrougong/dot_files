@@ -6,3 +6,6 @@ source ~/.bashrc
 export PATH="/usr/local/bin:$PATH"
 export CLICOLOR=1
 export LSCOLORS=ExFxCxDxBxegedabagacad
+
+# added by Miniconda3 installer
+export PATH="/Users/gyr/miniconda3/bin:$PATH"
