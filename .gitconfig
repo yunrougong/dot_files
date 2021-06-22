@@ -1,0 +1,9 @@
+[user]
+        name = XXX XX
+        email = user@gmail.com
+[core]
+        editor = vim
+[credential]
+        helper = osxkeychain
+[web]
+        browser = google-chrome
