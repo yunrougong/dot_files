@@ -78,3 +78,21 @@ source ~/.git-completion.sh
 # export for python env
 export PIP_REQUIRE_VIRTUALENV=false
 
+
+# Timer in command line
+function timer_start {
+          timer=${timer:-$SECONDS}
+  }
+
+function timer_stop {
+          timer_show=$(($SECONDS - $timer))
+            unset timer
+              # Write out the history
+                if [ "$(id -u)" -ne 0 ]; then echo "$(date -u +"%Y-%m-%dT%H:%M:%S%Z") $(pwd) $(history 1 | sed 's/^[0-9]\+\s\+//')" >> ~/.logs/bash-history-$(date "+%Y-%m-%d").log; fi
+        }
+
+if [ "$PROMPT_COMMAND" == "" ]; then
+          PROMPT_COMMAND="timer_stop"
+  else
+            PROMPT_COMMAND="$PROMPT_COMMAND; timer_stop"
+fi
