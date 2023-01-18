@@ -3,7 +3,9 @@ export LC_ALL=en_US.UTF-8
 export LANG=en_US.UTF-8
 
 source ~/.bashrc
-export PATH="/usr/local/bin:$PATH"
+# export PATH="/usr/local/bin:$PATH"
+# M1 chip Mac, brew install by default to another path
+export PATH="/opt/homebrew/bin:$PATH""
 export CLICOLOR=1
 export LSCOLORS=ExFxCxDxBxegedabagacad
 
