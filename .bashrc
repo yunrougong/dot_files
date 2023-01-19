@@ -42,10 +42,13 @@ if [ -x /usr/bin/dircolors ]; then
 fi
 
 # some more ls aliases
-alias ll='ls -alF'
-alias la='ls -A'
-alias l='ls -CF'
-
+alias ll="ls -alF"
+alias la="ls -A"
+alias l="ls -CF"
+# kubernetes
+alias kl="kubectl"
+alias kstaging="kubectl config use-context api.staging.corp.mongodb.com"
+alias kprod="kubectl config use-context api.prod.corp.mongodb.com"
 
 # sublime command line tool
 # alias subl='/Applications/Sublime\ Text.app/Contents/SharedSupport/bin/subl'
